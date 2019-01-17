@@ -31,13 +31,13 @@ int main()
             int y;
             scanf("%d", &x);
             scanf("%d", &y);
-            arr[index].x=x;
-            arr[index].y=y;
+            arr[index].x = x;
+            arr[index].y = y;
             index++;
             printf("添加成功，点击回车继续\n");
             char a;
-            scanf("%c",&a);
-            scanf("%c",&a);
+            scanf("%c", &a);
+            scanf("%c", &a);
         }
         if (code == 2)
         {
@@ -45,7 +45,16 @@ int main()
         }
         if (code == 3)
         {
-            /* code */
+            printf("所有位置信息如下\n");
+
+            for (int i = 0; i < index; i++)
+            {
+                printf("第%d个位置坐标为(%d,%d)\n", i + 1, arr[i].x, arr[i].y);
+            }
+            printf("点击回车继续\n");
+            char a;
+            scanf("%c", &a);
+            scanf("%c", &a);
         }
         if (code == 4)
         {
